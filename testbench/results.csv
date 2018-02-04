@@ -1,0 +1,22 @@
+jr1,jr,PASS,vgr16,A single JR instruction to Address 0x0
+addi1,addi,PASS,vgr16,Adding a constant to $2 followed be a jr insturction
+addi2,addi,PASS,vgr16,Adding 1024 to $2 in an infinite loop (Expect overflow)
+addi3,addi,PASS,vgr16,Adding 0x8000(-32768) from $2 in an infinite loop (Expect overflow)
+addiu1,addiu,PASS,vgr16,Adding 0xFFFF to $2 followed be a jr
+andi1,andi,PASS,vgr16,No Message
+beq1,beq,PASS,vgr16,Branching to INSTR_ADDR - 1 (Expect memory exception)
+bgez1,bgez,PASS,vgr16,Branching to INSTR_ADDR - 1 (Expect memory exception)
+bgezal1,bgezal,PASS,vgr16,No Message
+bgtz1,bgtz,PASS,vgr16,No Message
+blez1,blez,PASS,vgr16,No Message
+lb1,lb,PASS,vgr16,No Message
+lb2,lb,PASS,vgr16,Checking for SignExtension
+lh1,lh,PASS,vg16,Checking for Address Validation
+lh2,lh,PASS,vgr16,Checking for Sign Extension
+slti1,slti,PASS,vgr16,Checking basic functionality
+slti2,slti,PASS,vgr16,Checking for signed functionality
+lwr1,lwr,PASS,vgr16,No message
+lwr2,lwr,PASS,vgr16,Reading from last byte of Data Address space
+sw1,sw,PASS,vgr16,Trying to output the character 'A'
+add1,add,PASS,vgr16,Basic ADD test
+add2,add,FAIL,vgr16,Checking Overflow

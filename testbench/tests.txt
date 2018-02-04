@@ -1,0 +1,169 @@
+﻿ID,Instruction,Author,Bin,Message,ExitCode, outputs
+1,jr,vgr16,test0.mips.bin,A single JR instruction to Address 0x0,0,0
+2,addi,vgr16,test1.mips.bin,Adding a constant to $2 followed be a jr insturction,6,0
+3,addi,vgr16,test3.mips.bin,Adding 1024 to $2 in an infinite loop (Expect overflow),246,0
+4,addi,vgr16,test4.mips.bin,Adding 0x8000(-32768) from $2 in an infinite loop (Expect overflow),246,0
+5,addiu,vgr16,test2.mips.bin,Adding 0xFFFF to $2 followed be a jr,255,0
+6,andi,vgr16,test5.mips.bin,No Message,6,0
+7,beq,vgr16,beq01.mips.bin,No Message,1,0
+8,beq,vgr16,beq02.mips.bin,No Message,1,0
+9,beq,vgr16,beq03.mips.bin,No Message,1,0
+10,beq,vgr16,beq04.mips.bin,No Message,1,0
+11,beq,vgr16,beq05.mips.bin,No Message,1,0
+12,beq,vgr16,beq06.mips.bin,No Message,1,0
+13,beq,vgr16,beq07.mips.bin,No Message,1,0
+14,bne,vgr16,bne01.mips.bin,No Message,1,0
+15,bne,vgr16,bne02.mips.bin,No Message,1,0
+16,bne,vgr16,bne03.mips.bin,No Message,1,0
+17,bne,vgr16,bne04.mips.bin,No Message,1,0
+18,bne,vgr16,bne05.mips.bin,No Message,1,0
+19,bne,vgr16,bne06.mips.bin,No Message,1,0
+20,bne,vgr16,bne07.mips.bin,No Message,1,0
+21,bgez,vgr16,bgez01.mips.bin,No Message,1,0
+22,bgez,vgr16,bgez02.mips.bin,No Message,1,0
+23,bgez,vgr16,bgez03.mips.bin,No Message,1,0
+24,bgezal,vgr16,bgezal01.mips.bin,No Message,1,0
+25,bgezal,vgr16,bgezal02.mips.bin,No Message,8,0
+26,bgezal,vgr16,bgezal03.mips.bin,No Message,12,0
+27,bgtz,vgr16,bgtz01.mips.bin,No Message,1,0
+28,bgtz,vgr16,bgtz02.mips.bin,No Message,1,0
+29,blez,vgr16,blez01.mips.bin,No Message,1,0
+30,blez,vgr16,blez02.mips.bin,No Message,1,0
+31,bltz,vgr16,bltz01.mips.bin,No Message,1,0
+32,bltz,vgr16,bltz02.mips.bin,No Message,1,0
+33,bltz,vgr16,bltz03.mips.bin,No Message,1,0
+34,bltzal,vgr16,bltzal01.mips.bin,No Message,1,0
+35,bltzal,vgr16,bltzal02.mips.bin,No Message,8,0
+36,lbu,vgr16,lbu01.mips.bin,No Message,1,0
+37,lbu,vgr16,lbu02.mips.bin,No Message,1,0
+38,lbu,vgr16,lbu03.mips.bin,No Message,1,0
+39,lbu,vgr16,lbu04.mips.bin,No Message,245,0
+40,lb,vgr16,lb01.mips.bin,No Message,1,0
+41,lb,vgr16,lb02.mips.bin,No Message,1,0
+42,lb,vgr16,lb03.mips.bin,No Message,1,0
+43,lb,vgr16,lb04.mips.bin,No Message,245,0
+44,lb,vgr16,lb05.mips.bin,No Message,255,0
+45,lhu,vgr16,lhu01.mips.bin,No Message,1,0
+46,lhu,vgr16,lhu02.mips.bin,No Message,1,0
+47,lhu,vgr16,lhu03.mips.bin,No Message,1,0
+48,lhu,vgr16,lhu04.mips.bin,No Message,245,0
+49,lh,vgr16,lh01.mips.bin,No Message,1,0
+50,lh,vgr16,lh02.mips.bin,No Message,1,0
+51,lh,vgr16,lh03.mips.bin,No Message,1,0
+52,lh,vgr16,lh04.mips.bin,No Message,245,0
+53,lh,vgr16,lh05.mips.bin,No Message,255,0
+54,sltiu,vgr16,sltiu01.mips.bin,No Message,1,0
+55,sltiu,vgr16,sltiu02.mips.bin,No Message,0,0
+56,sltiu,vgr16,sltiu03.mips.bin,No Message,1,0
+57,slti,vgr16,slti01.mips.bin,No Message,1,0
+58,slti,vgr16,slti02.mips.bin,No Message,0,0
+59,slti,vgr16,slti03.mips.bin,No Message,0,0
+60,lwr,vgr16,test19.mips.bin,No message,9,0
+61,lwr,vgr16,test20.mips.bin,Reading from last byte of Data Address space,245,0
+62,sw,vgr16,test17.mips.bin,output the character 'A',0,0
+63,add,vgr16,test21.mips.bin,Basic ADD test,5,0
+64,add,gi316,test100.mips.bin,Checking overflow,246,0
+65,addu,gi316,test101.mips.bin,Checking that overflow is ignored,0,0
+66,and,gi316,test102.mips.bin,AND $2 (0xFFFFFFFF) with 0xFFFF,255,0
+67,multu,gi316,multu.mips.bin,-,254,0
+68,or,gi316,test104.mips.bin,OR $2 (0xFFFFFFFF) with 0,255,0
+69,slt,gi316,test105.mips.bin,see code,1,0
+70,sltu,gi316,test106.mips.bin, see code,0,0
+71,sll,gi316,test107.mips.bin,multiply 1 by 128,128,0
+72,srl,gi316,test108.mips.bin,divide 128 by 128,1,0
+73,sub,gi316,test109.mips.bin,subtract 1-1,0,0
+74,sub,gi316,test110.mips.bin,subtract 0x7FFFFFFF-0xFFFFFFFF (Overflow),246,0
+75,subu,gi316,test111.mips.bin,subtract 0x7FFFFFFF-0xFFFFFFFF (Must NOT Overflow),0,0
+76,div,gi316,test112.mips.bin,result should be 1,1,0
+77,sra,gi316,test113.mips.bin,divide -1/2^31 (Must remain -1 in $2),255,0
+78,mult,gi316,test114.mips.bin,multiply (-1)*(1),255,0
+79,multu,gi316,test115.mips.bin,multiply (-1)*(1),1,0
+80,Hi,gi316,test116.mips.bin,move a value from HI,1,0
+81,sllv,gi316,test117.mips.bin,see code,2,0
+82,srav,gi316,test118.mips.bin,see code,255,0
+83,srlv,gi316,test119.mips.bin,see code,1,0
+84,j,vgr16,test23.mips.bin,ADDI forllowed by JUMP,246,0
+85,stack,vgr16,test24.mips.bin,C test that calculates 5! recursively,128,0
+86,lw sw,vgr16,test26.mips.bin,Tests sw lw sb lb,255,0
+87,char,vgr16,test25.mips.bin,Teast loading and storting a char,72,0
+88,stress,gi316,testp.mips.bin,testing general,0,0
+89,stress,gi316,hard_set.mips.bin,-,1,0
+90,calc,vgr16,test27.mips.bin,No message,203,0
+91,sort,vgr16,test28.mips.bin,Merge Sort,5,0
+92,stress,gi316,hard_set3.mips.bin,Testing Branches,5,0
+93,stress,gi316,hard_set5.mips.bin,Testing lb,7,0
+94,stress,gi316,hard_set4.mips.bin,Testing shift,10,0
+95,stress,gi316,hard_set2.mips.bin,No Message,2,0
+96,sort,vgr16,test29.mips.bin,Sorting Char,98,0
+97,charOp,vgr16,test30.mips.bin,No Message,5,0
+98,jalr,vgr16,test32.mips.bin,No Message,5,0
+99,quiksrt,gi316,quicksort.mips.bin,-,211,0
+100,fibonci,gi316,fibonacci.mips.bin,-,21,0
+101,multu,gi316,multu2.mips.bin,-,1,0
+102,lwl,vgr16,test33.mips.bin,No Message,33,0
+103,stress,gi316,hard_set6.mips.bin,-,3,0
+104,add,gi316,add.mips.bin,-,8,0
+105,add,gi316,add2.mips.bin,-,254,0
+106,add,gi316,add3.mips.bin,-,246,0
+107,addu,gi316,addu.mips.bin,-,254,0
+108,addu,gi316,addu2.mips.bin,-,8,0
+109,and,gi316,and.mips.bin,-,0,0
+110,and,gi316,and2.mips.bin,-,1,0
+111,div,gi316,div.mips.bin,-,0,0
+112,div,gi316,div2.mips.bin,-,0,0
+113,div,gi316,div3.mips.bin,-,255,0
+114,div,gi316,div4.mips.bin,-,1,0
+115,div,gi316,div5.mips.bin,-,0,0
+116,div,gi316,div6.mips.bin,-,1,0
+117,div,gi316,div7.mips.bin,-,0,0
+118,div,gi316,div8.mips.bin,-,0,0
+119,divu,gi316,divu1.mips.bin,-,255,0
+120,divu,gi316,divu2.mips.bin,-,1,0
+121,divu,gi316,divu3.mips.bin,-,1,0
+122,divu,gi316,divu4.mips.bin,-,1,0
+123,jr,gi316,jr.mips.bin,-,245,0
+124,jr,gi316,jr_exception.mips.bin,-,245,0
+125,mult,gi316,mult1.mips.bin,-,253,0
+126,mult,gi316,mult2.mips.bin,-,1,0
+127,mult,gi316,mult3.mips.bin,-,255,0
+128,mult,gi316,mult4.mips.bin,-,255,0
+129,mult,gi316,mult5.mips.bin,-,1,0
+130,mult,gi316,mult6.mips.bin,-,255,0
+131,mult,gi316,mult7.mips.bin,-,1,0
+132,or,gi316,or.mips.bin,-,255,0
+133,or,gi316,or2.mips.bin,-,255,0
+134,or,gi316,or3.mips.bin,-,255,0
+135,or,gi316,or4.mips.bin,-,1,0
+136,sll,gi316,sll1.mips.bin,-,1,0
+137,sll,gi316,sll2.mips.bin,-,4,0
+138,sll,gi316,sll3.mips.bin,-,255,0
+139,sllv,gi316,sllv.mips.bin,-,0,0
+140,sllv,gi316,sllv2.mips.bin,-,8,0
+141,srlv,gi316,srlv.mips.bin,-,1,0
+142,slt,gi316,slt1.mips.bin,-,0,0
+143,slt,gi316,slt2.mips.bin,-,1,0
+144,slt,gi316,slt3.mips.bin,-,0,0
+145,sltu,gi316,sltu1.mips.bin,-,0,0
+146,sltu,gi316,sltu2.mips.bin,-,0,0
+147,sltu,gi316,sltu3.mips.bin,-,1,0
+148,sltu,gi316,sltu4.mips.bin,-,0,0
+149,sra,gi316,sra.mips.bin,-,255,0
+150,sra,gi316,sra2.mips.bin,-,1,0
+151,srav,gi316,srav.mips.bin,-,255,0
+152,srl,gi316,srl1.mips.bin,-,1,0
+153,srl,gi316,srl2.mips.bin,-,1,0
+154,srl,gi316,srl3.mips.bin,-,2,0
+155,sub,gi316,sub1.mips.bin,-,255,0
+156,sub,gi316,sub2.mips.bin,-,1,0
+157,sub,gi316,sub3.mips.bin,-,246,0
+158,sub,gi316,sub4.mips.bin,-,1,0
+159,subu,gi316,subu1.mips.bin,-,2,0
+160,subu,gi316,subu2.mips.bin,-,1,0
+161,lwl,vgr16,lwl01.mips.bin,No Message,1,0
+162,lwl,vgr16,lwl02.mips.bin,No Message,1,0
+163,jalr,vgr16,jalr01.mips.bin,No Message,1,0
+164,sh,vgr16,sh01.mips.bin,No Message,1,0
+165,sh,vgr16,sh02.mips.bin,No Message,1,0
+166,sh,vgr16,sh03.mips.bin,No Message,245,0
+167,lwr,vgr16,lwr01.mips.bin,No Message,1,0
+168,lwr,vgr16,lwr02.mips.bin,No Message,1,0
