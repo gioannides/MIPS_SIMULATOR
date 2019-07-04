@@ -3,7 +3,7 @@
   <br>
 </div>
 
-Architecture II Coursework
+Architecture Coursework
 ==========================
 
 There are three central aims of this coursework:
