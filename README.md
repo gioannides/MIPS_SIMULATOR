@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="download.png">
+  <br>
+</div>
+
 Architecture II Coursework
 ==========================
 
