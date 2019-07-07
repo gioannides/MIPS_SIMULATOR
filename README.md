@@ -6,7 +6,7 @@
 Architecture Coursework
 ==========================
 
-The code can be found  <a href="https://github.com/gioannides/EIE2-MIPS_SIMULATOR">here</a> 
+The code can be found  <a href="https://github.com/gioannides/EIE2-MIPS_SIMULATOR">here</a>.
 -------------------------------------------------------------------------------------------
 
 There are three central aims of this coursework:
